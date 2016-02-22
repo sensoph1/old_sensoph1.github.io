@@ -5,8 +5,8 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>http://jeremybarkley.com/</link>
     <atom:link href="http://jeremybarkley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 22 Feb 2016 16:59:39 -0600</pubDate>
-    <lastBuildDate>Mon, 22 Feb 2016 16:59:39 -0600</lastBuildDate>
+    <pubDate>Mon, 22 Feb 2016 17:29:18 -0600</pubDate>
+    <lastBuildDate>Mon, 22 Feb 2016 17:29:18 -0600</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -38,39 +38,50 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
     
       <item>
         <title>2016 Goals</title>
-        <description>&lt;h3 id=&quot;what-will-be-true-at-the-end-of-2016&quot;&gt;What will be true at the end of 2016&lt;/h3&gt;
-&lt;p&gt;####Personal
--Read through the bible
--Read 3- 6 helpful non-fiction books (do over?)
--Weight down in the low 200
--Journal more
-####Business
--Will have found 5 total clients to work for
--Have my website and Facebook page done 
--Will have created 5-10 websites examples to put into my portfolio
--Making 3-600 more a month either from clients or a raise or both.&lt;/p&gt;
+        <description>&lt;h2 id=&quot;what-will-be-true-at-the-end-of-2016&quot;&gt;What will be true at the end of 2016&lt;/h2&gt;
+
+&lt;h3 id=&quot;personal&quot;&gt;Personal&lt;/h3&gt;
+&lt;ul&gt;
+  &lt;li&gt;Read through the bible*&lt;/li&gt;
+  &lt;li&gt;Read 3- 6 helpful non-fiction books (do over?)*&lt;/li&gt;
+  &lt;li&gt;Weight down in the low 200&lt;/li&gt;
+  &lt;li&gt;Journal more
+### Business###&lt;/li&gt;
+  &lt;li&gt;Will have found 5 total clients to work for&lt;/li&gt;
+  &lt;li&gt;Have my website and Facebook page done &lt;/li&gt;
+  &lt;li&gt;Will have created 5-10 websites examples to put into my portfolio&lt;/li&gt;
+  &lt;li&gt;Making 3-600 more a month either from clients or a raise or both.&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;what-do-you-want-to-start-doing&quot;&gt;What do you want to start doing&lt;/h3&gt;
-&lt;p&gt;-Creating and nurturing relationships 
--Reading more(bible and books)
--Pray more 
--Waking up earlier going to bed earlier
--Regular date nights
--Eating BALi lifestyle more consistently 
--Going for walks/exercise  &lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Creating and nurturing relationships &lt;/li&gt;
+  &lt;li&gt;Reading more(bible and books)&lt;/li&gt;
+  &lt;li&gt;Pray more &lt;/li&gt;
+  &lt;li&gt;Waking up earlier going to bed earlier&lt;/li&gt;
+  &lt;li&gt;Regular date nights&lt;/li&gt;
+  &lt;li&gt;Eating BALi lifestyle more consistently &lt;/li&gt;
+  &lt;li&gt;Going for walks/exercise  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;what-do-you-want-to-stop-doing&quot;&gt;What do you want to stop doing&lt;/h3&gt;
-&lt;p&gt;-Being tied to a device 
--Being grumpy /being short / taking frustrations out on family 
--Eating out so often&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Being tied to a device &lt;/li&gt;
+  &lt;li&gt;Being grumpy /being short / taking frustrations out on family &lt;/li&gt;
+  &lt;li&gt;Eating out so often&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;h3 id=&quot;what-do-you-want-to-continue-doing&quot;&gt;What do you want to continue doing&lt;/h3&gt;
-&lt;p&gt;-Going and volunteering at church and attending small groups&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Going and volunteering at church and attending small groups&lt;/li&gt;
+&lt;/ul&gt;
 </description>
-        <pubDate>Mon, 22 Feb 2016 00:00:00 -0600</pubDate>
-        <link>http://jeremybarkley.com/2016/02/22/2016-goals/</link>
-        <guid isPermaLink="true">http://jeremybarkley.com/2016/02/22/2016-goals/</guid>
+        <pubDate>Mon, 22 Feb 2016 09:45:50 -0600</pubDate>
+        <link>http://jeremybarkley.com/goals/2016/02/22/2016-goals/</link>
+        <guid isPermaLink="true">http://jeremybarkley.com/goals/2016/02/22/2016-goals/</guid>
         
+        
+        <category>goals</category>
         
       </item>
     
