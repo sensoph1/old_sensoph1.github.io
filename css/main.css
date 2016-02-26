@@ -15,7 +15,10 @@ body {
   font-weight: 300;
   background-color: #fdfdfd;
 }
-
+hr{
+  margin-bottom: 4px;
+  width:50%;
+}
 h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
 
 a         { color: #2a7ae2; text-decoration: none; }
@@ -33,7 +36,9 @@ a:visited { color: #205caa; }
   margin: 0 auto;
   zoom: 1;
 }
-
+li {
+  margin:0px;
+}
 
 /* Layout Styles */
 /* ----------------------------------------------------------*/
@@ -137,14 +142,15 @@ a:visited { color: #205caa; }
 
 .page-content {
   padding: 30px 0;
-  background-color: #fff;
+  background-color: lightgray;
 }
 
 
 /* Home styles */
 /* ----------------------------------------------------------*/
 
-.home h1 { margin-bottom: 25px; }
+.home h1 { margin-bottom: 1px; }
+
 
 .posts { list-style-type: none; }
 
@@ -224,7 +230,12 @@ a:visited { color: #205caa; }
 
 .post-content ul,
 .post-content ol { padding-left: 20px; }
-
+.post {
+      border: solid 1px gray;
+    border-radius: 20px;
+    padding: 20px;
+    background:white;
+  }
 .post pre,
 .post code {
   border: 1px solid #d5d5e9;

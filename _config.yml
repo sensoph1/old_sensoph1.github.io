@@ -10,3 +10,7 @@ github_username:  sensoph1
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+gems: [jekyll-paginate]
+
+paginate: 10

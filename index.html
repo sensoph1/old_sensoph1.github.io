@@ -4,14 +4,20 @@ layout: default
 
 <div class="home">
 
-  <h1>Posts</h1>
-
   <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
+  {% for post in paginator.posts %}
+    <div class="post">
+      <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+        <hr>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}  |  Categories: <strong> {{ post.categories }} </strong> </span>
+        
+        {{ post.content }}
+      
+
+    </div>
+    <br>
+    <br>
+    <br>
     {% endfor %}
   </ul>
 
