@@ -5,8 +5,8 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>http://jeremybarkley.com/</link>
     <atom:link href="http://jeremybarkley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 26 Feb 2016 16:00:35 -0600</pubDate>
-    <lastBuildDate>Fri, 26 Feb 2016 16:00:35 -0600</lastBuildDate>
+    <pubDate>Fri, 26 Feb 2016 16:18:37 -0600</pubDate>
+    <lastBuildDate>Fri, 26 Feb 2016 16:18:37 -0600</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -16,10 +16,7 @@ anyways i guess ill get started&lt;/p&gt;
 
 &lt;p&gt;setting up this page alone included quite a bit of learning just getting jekyll setup and looking decent. It took a bit of time but i think im starting to wrap my head around how it works and should be set up. The main thing i wanted to do on it to start with was to have it display the whole post instead of only the title and date like it came with. To do that i first had to figure out where that file was even located. i finally realized its in the root directory in a file called index.html (seems obvious now…)&lt;/p&gt;
 
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;sb&quot;&gt;```&lt;/span&gt;
-
-&lt;span class=&quot;sb&quot;&gt;```&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
+&lt;p&gt;maybe monday i can learn how to post the snippet of code to detail this…&lt;/p&gt;
 </description>
         <pubDate>Thu, 25 Feb 2016 00:00:00 -0600</pubDate>
         <link>http://jeremybarkley.com/til/2016/02/25/Jekyll-is-my-friend_maybe/</link>
@@ -31,33 +28,6 @@ anyways i guess ill get started&lt;/p&gt;
         
         
         <category>til</category>
-        
-      </item>
-    
-      <item>
-        <title>Welcome to Jekyll!</title>
-        <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory - edit this post and re-build (or run with the &lt;code&gt;-w&lt;/code&gt; switch) to see your changes!
-To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; directory that follows the convention: YYYY-MM-DD-name-of-post.ext.&lt;/p&gt;
-
-&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
-
-&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&amp;quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&amp;quot;&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&amp;#39;Tom&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &amp;#39;Hi, Tom&amp;#39; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-
-&lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;.&lt;/p&gt;
-
-</description>
-        <pubDate>Mon, 22 Feb 2016 09:45:50 -0600</pubDate>
-        <link>http://jeremybarkley.com/jekyll/update/2016/02/22/welcome-to-jekyll/</link>
-        <guid isPermaLink="true">http://jeremybarkley.com/jekyll/update/2016/02/22/welcome-to-jekyll/</guid>
-        
-        
-        <category>jekyll</category>
-        
-        <category>update</category>
         
       </item>
     
