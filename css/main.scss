@@ -1,5 +1,7 @@
-/* Base */
-/* ----------------------------------------------------------*/
+---
+#front matter comment to ensure jekyll reads file.
+---
+
 
 * {
   margin: 0;
@@ -16,10 +18,10 @@ body {
   background-color: #fdfdfd;
 }
 hr{
-  margin-bottom: 4px;
-  width:50%;
+  margin: 20px 0 0 0;
+  width:100%;
 }
-h1, h2, h3, h4, h5, h6 { font-size: 100%; font-weight: 400; }
+h1 { font-size: 100%; font-weight: 400; }
 
 a         { color: #2a7ae2; text-decoration: none; }
 a:hover   { color: #000; text-decoration: underline; }
@@ -230,11 +232,13 @@ li {
 
 .post-content ul,
 .post-content ol { padding-left: 20px; }
+.post h1{ padding-bottom:10px;}
 .post {
       border: solid 1px gray;
     border-radius: 20px;
     padding: 20px;
     background:white;
+    margin:35px 0 ;
   }
 .post pre,
 .post code {
@@ -252,7 +256,9 @@ li {
 
 .post ul,
 .post ol { margin-left: 1.35em; }
-
+.post li{
+  margin:0px;
+}
 .post pre code {
   border: 0;
   padding-right: 0;

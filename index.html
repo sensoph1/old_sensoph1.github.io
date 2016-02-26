@@ -8,16 +8,13 @@ layout: default
   {% for post in paginator.posts %}
     <div class="post">
       <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-        <hr>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}  |  Categories: <strong> {{ post.categories }} </strong> </span>
-        
-        {{ post.content }}
       
+        {{ post.content }}
+      <hr>
+      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}  |  Categories: <strong> {{ post.categories }} </strong> </span>
 
     </div>
-    <br>
-    <br>
-    <br>
+    
     {% endfor %}
   </ul>
 
