@@ -11,7 +11,9 @@ layout: default
       
         {{ post.content }}
       <hr>
-      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}  |  Categories: <strong> {{ post.categories }} </strong> </span>
+      <div>
+        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}  |  Categories: <strong><span class="category-style"> {{ post.categories }} </span></span></strong> 
+      </div>
 
     </div>
     

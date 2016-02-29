@@ -11,4 +11,13 @@ anyways i guess ill get started
 
 setting up this page alone included quite a bit of learning just getting jekyll setup and looking decent. It took a bit of time but i think im starting to wrap my head around how it works and should be set up. The main thing i wanted to do on it to start with was to have it display the whole post instead of only the title and date like it came with. To do that i first had to figure out where that file was even located. i finally realized its in the root directory in a file called index.html (seems obvious now...)
 
+By default it only shows the post title ( \{\{post.title\}\} ) and links to the post ( \{\{ post.url \}\} ), but i wanted to have all posts there inline (also added pagination). 
+
 maybe monday i can learn how to post the snippet of code to detail this...
+
+... no luck on that snippet but i made a screenshot.
+
+
+![alt text](/img/jekyll_post_loop.png "jekyll_post_loop")
+
+obviously the first { % starts the loop and as long as there are more posts it will spit them out. and the endfor bit ends the loop.

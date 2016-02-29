@@ -69,10 +69,20 @@ anyways i guess ill get started</p>
 
 <p>setting up this page alone included quite a bit of learning just getting jekyll setup and looking decent. It took a bit of time but i think im starting to wrap my head around how it works and should be set up. The main thing i wanted to do on it to start with was to have it display the whole post instead of only the title and date like it came with. To do that i first had to figure out where that file was even located. i finally realized its in the root directory in a file called index.html (seems obvious now…)</p>
 
+<p>By default it only shows the post title ( {{post.title}} ) and links to the post ( {{ post.url }} ), but i wanted to have all posts there inline (also added pagination).</p>
+
 <p>maybe monday i can learn how to post the snippet of code to detail this…</p>
 
+<p>… no luck on that snippet but i made a screenshot.</p>
+
+<p><img src="/img/jekyll_post_loop.png" alt="alt text" title="jekyll_post_loop" /></p>
+
+<p>obviously the first { % starts the loop and as long as there are more posts it will spit them out. and the endfor bit ends the loop.</p>
+
       <hr>
-      <span class="post-date">Feb 25, 2016  |  Categories: <strong> til </strong> </span>
+      <div>
+        <span class="post-date">Feb 25, 2016  |  Categories: <strong><span class="category-style"> til </span></span></strong> 
+      </div>
 
     </div>
     
@@ -122,7 +132,9 @@ anyways i guess ill get started</p>
 </ul>
 
       <hr>
-      <span class="post-date">Feb 22, 2016  |  Categories: <strong> goals </strong> </span>
+      <div>
+        <span class="post-date">Feb 22, 2016  |  Categories: <strong><span class="category-style"> goals </span></span></strong> 
+      </div>
 
     </div>
     

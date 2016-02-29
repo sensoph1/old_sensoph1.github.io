@@ -5,8 +5,8 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>http://jeremybarkley.com/</link>
     <atom:link href="http://jeremybarkley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 26 Feb 2016 16:18:37 -0600</pubDate>
-    <lastBuildDate>Fri, 26 Feb 2016 16:18:37 -0600</lastBuildDate>
+    <pubDate>Mon, 29 Feb 2016 14:55:57 -0600</pubDate>
+    <lastBuildDate>Mon, 29 Feb 2016 14:55:57 -0600</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -16,7 +16,15 @@ anyways i guess ill get started&lt;/p&gt;
 
 &lt;p&gt;setting up this page alone included quite a bit of learning just getting jekyll setup and looking decent. It took a bit of time but i think im starting to wrap my head around how it works and should be set up. The main thing i wanted to do on it to start with was to have it display the whole post instead of only the title and date like it came with. To do that i first had to figure out where that file was even located. i finally realized its in the root directory in a file called index.html (seems obvious now…)&lt;/p&gt;
 
+&lt;p&gt;By default it only shows the post title ( {{post.title}} ) and links to the post ( {{ post.url }} ), but i wanted to have all posts there inline (also added pagination).&lt;/p&gt;
+
 &lt;p&gt;maybe monday i can learn how to post the snippet of code to detail this…&lt;/p&gt;
+
+&lt;p&gt;… no luck on that snippet but i made a screenshot.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/jekyll_post_loop.png&quot; alt=&quot;alt text&quot; title=&quot;jekyll_post_loop&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;obviously the first { % starts the loop and as long as there are more posts it will spit them out. and the endfor bit ends the loop.&lt;/p&gt;
 </description>
         <pubDate>Thu, 25 Feb 2016 00:00:00 -0600</pubDate>
         <link>http://jeremybarkley.com/til/2016/02/25/Jekyll-is-my-friend_maybe/</link>
