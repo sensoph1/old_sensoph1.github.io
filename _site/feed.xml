@@ -2,21 +2,27 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jeremybarkley.com</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
+    <description>This is my site...</description>
     <link>http://jeremybarkley.com/</link>
     <atom:link href="http://jeremybarkley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 29 Feb 2016 22:50:33 -0600</pubDate>
-    <lastBuildDate>Mon, 29 Feb 2016 22:50:33 -0600</lastBuildDate>
+    <pubDate>Mon, 29 Feb 2016 23:13:09 -0600</pubDate>
+    <lastBuildDate>Mon, 29 Feb 2016 23:13:09 -0600</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
-        <title>Leap Day</title>
-        <description>
+        <title>LEAP DAY</title>
+        <description>&lt;p&gt;so today is leap day… therefore it doesn’t count! you cant learn new things on leap day! YAY!&lt;/p&gt;
 </description>
         <pubDate>Mon, 29 Feb 2016 00:00:00 -0600</pubDate>
-        <link>http://jeremybarkley.com/2016/02/29/Leap-day/</link>
-        <guid isPermaLink="true">http://jeremybarkley.com/2016/02/29/Leap-day/</guid>
+        <link>http://jeremybarkley.com/til/2016/02/29/Leap-day/</link>
+        <guid isPermaLink="true">http://jeremybarkley.com/til/2016/02/29/Leap-day/</guid>
         
+        <category>jekyll</category>
+        
+        <category>TIL</category>
+        
+        
+        <category>til</category>
         
       </item>
     

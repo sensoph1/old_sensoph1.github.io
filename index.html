@@ -15,15 +15,20 @@ layout: default
             <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}  |  Categories: <span class="category-style"><strong> {{ post.categories }} </strong> </span></span>
           </div>
       </div>   
-      <div class="col-md-3 post"> 
+      
+
+      <div class="col-md-3"> 
    
-   
-   
-    Category:
+    <div id="tag-date" class="row post">
+      <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}  
     </div>
+    <div id="tag-cat" class="row post">
+    Categories: <span class="category-style"><strong> {{ post.categories }}    </div>
+   </div>
    </div>
    
     {% endfor %}
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  <div class="wrap">
+    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+  </div>  
 </div>

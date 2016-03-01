@@ -28,6 +28,17 @@ a:hover   { color: #000; text-decoration: underline; }
 a:visited { color: #205caa; }
 
 /* Utility */
+.post#tag-date, .post#tag-cat{
+	padding:5px 5px 5px 15px;
+	border-radius:10px;
+	margin: 35px 0 2px 0;
+
+}
+.post#tag-cat{
+	margin: 0;
+
+}
+
 
 .wrap:before,
 .wrap:after { content:""; display:table; }
@@ -247,7 +258,7 @@ li {
 .post p{ margin-top:1em;}
 .post {
       border: solid 1px gray;
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 20px;
     background:white;
     margin:35px 0 ;
