@@ -33,7 +33,13 @@ a:visited { color: #205caa; }
 .wrap:after { content:""; display:table; }
 .wrap:after { clear: both; }
 .wrap {
-  max-width: 800px;
+  max-width: 80%;
+  padding: 0 30px;
+  margin: 0 auto;
+  zoom: 1;
+}
+.header-wrap {
+  max-width: 77%;
   padding: 0 30px;
   margin: 0 auto;
   zoom: 1;

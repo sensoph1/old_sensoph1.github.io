@@ -3,23 +3,22 @@ layout: default
 ---
 
 <div class="home">
-
-  <ul class="posts">
-  {% for post in paginator.posts %}
-    <div class="post">
-      <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-      
-        {{ post.content }}
-      <hr>
-      <div>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}  |  Categories: <strong><span class="category-style"> {{ post.categories }} </span></span></strong> 
-      </div>
-
-    </div>
-    
+  <div class="posts col-md-9">
+        {% for post in paginator.posts %}
+        <div class="post">
+          <h1><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+          {{ post.content }}
+          <hr>
+          <div class="post-footer">
+            <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}  |  Categories: <span class="category-style"><strong> {{ post.categories }} </strong> </span></span>
+          </div>
+      </div>    
     {% endfor %}
-  </ul>
-
+   </div>
+   <div class="col-md-3 posts">
+   <div class="post">
+    Category
+    </div>
+   </div>
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>

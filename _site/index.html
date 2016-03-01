@@ -7,7 +7,12 @@
     <title>jeremybarkley.com</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/css/main.css">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.">
     <link rel="canonical" href="http://jeremybarkley.com/">
 
@@ -21,7 +26,7 @@
 
     <header class="site-header">
 
-  <div class="wrap">
+  <div class="header-wrap">
 
     <a class="site-title" href="/">jeremybarkley.com</a>
 
@@ -58,16 +63,24 @@
     <div class="page-content">
       <div class="wrap">
       <div class="home">
+  <div class="posts col-md-9">
+        
+        <div class="post">
+          <h1><a class="post-link" href="/2016/02/29/Leap-day/">Leap Day</a></h1>
+          
 
-  <ul class="posts">
-  
-    <div class="post">
-      <h1><a class="post-link" href="/til/2016/02/25/Jekyll-is-my-friend_maybe/">Jekyll is my friend... maybe</a></h1>
-      
-        <p>So ive decided to try and document my daily learning using markdown, jekyll, and github pages. I say daily but I am mostly refering to week days, however if i get something over the weekend ill call it a bonus… This will be a challenge for me just to put my thoughts on paper (ok not really paper…)
+          <hr>
+          <div class="post-footer">
+            <span class="post-date">Feb 29, 2016  |  Categories: <span class="category-style"><strong>  </strong> </span></span>
+          </div>
+      </div>    
+    
+        <div class="post">
+          <h1><a class="post-link" href="/til/2016/02/25/Jekyll-is-my-friend_maybe/">Jekyll is my friend... maybe</a></h1>
+          <p>So ive decided to try and document my daily learning using markdown, jekyll, and github pages. I say daily but I am mostly refering to week days, however if i get something over the weekend ill call it a bonus… This will be a challenge for me just to put my thoughts on paper (ok not really paper…)
 anyways i guess ill get started</p>
 
-<p>setting up this page alone included quite a bit of learning just getting jekyll setup and looking decent. It took a bit of time but i think im starting to wrap my head around how it works and should be set up. The main thing i wanted to do on it to start with was to have it display the whole post instead of only the title and date like it came with. To do that i first had to figure out where that file was even located. i finally realized its in the root directory in a file called index.html (seems obvious now…)</p>
+<p>Setting up this page alone included quite a bit of learning just getting jekyll setup and looking decent. It took a bit of time but i think im starting to wrap my head around how it works and should be set up. The main thing i wanted to do on it to start with was to have it display the whole post instead of only the title and date like it came with. To do that i first had to figure out where that file was even located. i finally realized its in the root directory in a file called index.html (seems obvious now…)</p>
 
 <p>By default it only shows the post title ( {{post.title}} ) and links to the post ( {{ post.url }} ), but i wanted to have all posts there inline (also added pagination).</p>
 
@@ -79,18 +92,15 @@ anyways i guess ill get started</p>
 
 <p>obviously the first { % starts the loop and as long as there are more posts it will spit them out. and the endfor bit ends the loop.</p>
 
-      <hr>
-      <div>
-        <span class="post-date">Feb 25, 2016  |  Categories: <strong><span class="category-style"> til </span></span></strong> 
-      </div>
-
-    </div>
+          <hr>
+          <div class="post-footer">
+            <span class="post-date">Feb 25, 2016  |  Categories: <span class="category-style"><strong> til </strong> </span></span>
+          </div>
+      </div>    
     
-    
-    <div class="post">
-      <h1><a class="post-link" href="/goals/2016/02/22/2016-goals/">2016 Goals</a></h1>
-      
-        <h2 id="what-will-be-true-at-the-end-of-2016">What will be true at the end of 2016</h2>
+        <div class="post">
+          <h1><a class="post-link" href="/goals/2016/02/22/2016-goals/">2016 Goals</a></h1>
+          <h2 id="what-will-be-true-at-the-end-of-2016">What will be true at the end of 2016</h2>
 
 <h3 id="personal">Personal</h3>
 <ul>
@@ -131,18 +141,19 @@ anyways i guess ill get started</p>
   <li>Going and volunteering at church and attending small groups</li>
 </ul>
 
-      <hr>
-      <div>
-        <span class="post-date">Feb 22, 2016  |  Categories: <strong><span class="category-style"> goals </span></span></strong> 
-      </div>
-
+          <hr>
+          <div class="post-footer">
+            <span class="post-date">Feb 22, 2016  |  Categories: <span class="category-style"><strong> goals </strong> </span></span>
+          </div>
+      </div>    
+    
+   </div>
+   <div class="col-md-3 posts">
+   <div class="post">
+    Category
     </div>
-    
-    
-  </ul>
-
+   </div>
   <p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
-
 </div>
 
       </div>

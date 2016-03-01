@@ -5,16 +5,27 @@
     <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</description>
     <link>http://jeremybarkley.com/</link>
     <atom:link href="http://jeremybarkley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 29 Feb 2016 14:55:57 -0600</pubDate>
-    <lastBuildDate>Mon, 29 Feb 2016 14:55:57 -0600</lastBuildDate>
+    <pubDate>Mon, 29 Feb 2016 16:45:42 -0600</pubDate>
+    <lastBuildDate>Mon, 29 Feb 2016 16:45:42 -0600</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Leap Day</title>
+        <description>
+</description>
+        <pubDate>Mon, 29 Feb 2016 00:00:00 -0600</pubDate>
+        <link>http://jeremybarkley.com/2016/02/29/Leap-day/</link>
+        <guid isPermaLink="true">http://jeremybarkley.com/2016/02/29/Leap-day/</guid>
+        
+        
+      </item>
     
       <item>
         <title>Jekyll is my friend... maybe</title>
         <description>&lt;p&gt;So ive decided to try and document my daily learning using markdown, jekyll, and github pages. I say daily but I am mostly refering to week days, however if i get something over the weekend ill call it a bonus… This will be a challenge for me just to put my thoughts on paper (ok not really paper…)
 anyways i guess ill get started&lt;/p&gt;
 
-&lt;p&gt;setting up this page alone included quite a bit of learning just getting jekyll setup and looking decent. It took a bit of time but i think im starting to wrap my head around how it works and should be set up. The main thing i wanted to do on it to start with was to have it display the whole post instead of only the title and date like it came with. To do that i first had to figure out where that file was even located. i finally realized its in the root directory in a file called index.html (seems obvious now…)&lt;/p&gt;
+&lt;p&gt;Setting up this page alone included quite a bit of learning just getting jekyll setup and looking decent. It took a bit of time but i think im starting to wrap my head around how it works and should be set up. The main thing i wanted to do on it to start with was to have it display the whole post instead of only the title and date like it came with. To do that i first had to figure out where that file was even located. i finally realized its in the root directory in a file called index.html (seems obvious now…)&lt;/p&gt;
 
 &lt;p&gt;By default it only shows the post title ( {{post.title}} ) and links to the post ( {{ post.url }} ), but i wanted to have all posts there inline (also added pagination).&lt;/p&gt;
 
