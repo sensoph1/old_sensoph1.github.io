@@ -6,7 +6,7 @@ categories: jekyll
 ---
 
 So I am working on redoing this sites css using sassy css (scss) and in doing so i needed a way to have it auto update easier than just stopping the server and restarted. In my research i discovered a gem called guard. 
-
+https://github.com/guard/guard
 below are the gems you will need at a minimum 
 {% highlight ruby %}
 gem 'jekyll'
