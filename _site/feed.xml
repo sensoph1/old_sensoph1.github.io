@@ -5,8 +5,8 @@
     <description>This is my site...</description>
     <link>http://jeremybarkley.com/</link>
     <atom:link href="http://jeremybarkley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 05 Mar 2016 16:32:15 -0600</pubDate>
-    <lastBuildDate>Sat, 05 Mar 2016 16:32:15 -0600</lastBuildDate>
+    <pubDate>Sat, 05 Mar 2016 16:33:33 -0600</pubDate>
+    <lastBuildDate>Sat, 05 Mar 2016 16:33:33 -0600</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
@@ -14,6 +14,8 @@
         <description>&lt;p&gt;So I am working on redoing this sites css using sassy css (scss) and in doing so i needed a way to have it auto update easier than just stopping the server and restarted. In my research i discovered a gem called guard. 
 https://github.com/guard/guard
 below are the gems you will need at a minimum&lt;/p&gt;
+
+&lt;p&gt;** note this is in ubuntu linux but i assume the setup/results should be the same wherever **&lt;/p&gt;
 
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;jekyll&amp;#39;&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;guard&amp;#39;&lt;/span&gt;
@@ -53,6 +55,7 @@ below are the gems you will need at a minimum&lt;/p&gt;
 &lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serve&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;watch&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
 &lt;p&gt;seems to be working nicely when i save a document, then tab over and refresh.&lt;/p&gt;
+
 </description>
         <pubDate>Sat, 05 Mar 2016 09:45:50 -0600</pubDate>
         <link>http://jeremybarkley.com/jekyll/2016/03/05/2016-Auto-reload-with-guard/</link>

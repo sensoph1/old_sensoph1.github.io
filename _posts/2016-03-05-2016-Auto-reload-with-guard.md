@@ -8,6 +8,8 @@ categories: jekyll
 So I am working on redoing this sites css using sassy css (scss) and in doing so i needed a way to have it auto update easier than just stopping the server and restarted. In my research i discovered a gem called guard. 
 https://github.com/guard/guard
 below are the gems you will need at a minimum 
+
+** note this is in ubuntu linux but i assume the setup/results should be the same wherever **
 {% highlight ruby %}
 gem 'jekyll'
 gem 'guard'
@@ -64,3 +66,4 @@ jekyll serve --watch
 {% endhighlight %}
 
 seems to be working nicely when i save a document, then tab over and refresh.
+
