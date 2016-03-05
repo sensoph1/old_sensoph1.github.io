@@ -5,15 +5,16 @@
     <description>This is my site...</description>
     <link>http://jeremybarkley.com/</link>
     <atom:link href="http://jeremybarkley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Sat, 05 Mar 2016 16:33:33 -0600</pubDate>
-    <lastBuildDate>Sat, 05 Mar 2016 16:33:33 -0600</lastBuildDate>
+    <pubDate>Sat, 05 Mar 2016 16:33:57 -0600</pubDate>
+    <lastBuildDate>Sat, 05 Mar 2016 16:33:57 -0600</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
     
       <item>
         <title>Live reload a page using Guard!</title>
         <description>&lt;p&gt;So I am working on redoing this sites css using sassy css (scss) and in doing so i needed a way to have it auto update easier than just stopping the server and restarted. In my research i discovered a gem called guard. 
-https://github.com/guard/guard
-below are the gems you will need at a minimum&lt;/p&gt;
+https://github.com/guard/guard&lt;/p&gt;
+
+&lt;p&gt;below are the gems you will need at a minimum&lt;/p&gt;
 
 &lt;p&gt;** note this is in ubuntu linux but i assume the setup/results should be the same wherever **&lt;/p&gt;
 
