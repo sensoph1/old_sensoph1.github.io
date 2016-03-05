@@ -21,3 +21,4 @@ maybe monday i can learn how to post the snippet of code to detail this...
 ![alt text](/img/jekyll_post_loop.png "jekyll_post_loop")
 
 obviously the first { % starts the loop and as long as there are more posts it will spit them out. and the endfor bit ends the loop.
+

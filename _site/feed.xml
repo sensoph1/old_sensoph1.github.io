@@ -5,17 +5,71 @@
     <description>This is my site...</description>
     <link>http://jeremybarkley.com/</link>
     <atom:link href="http://jeremybarkley.com/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 29 Feb 2016 23:13:09 -0600</pubDate>
-    <lastBuildDate>Mon, 29 Feb 2016 23:13:09 -0600</lastBuildDate>
+    <pubDate>Sat, 05 Mar 2016 16:30:47 -0600</pubDate>
+    <lastBuildDate>Sat, 05 Mar 2016 16:30:47 -0600</lastBuildDate>
     <generator>Jekyll v2.2.0</generator>
+    
+      <item>
+        <title>Live reload a page using Guard!</title>
+        <description>&lt;p&gt;So I am working on redoing this sites css using sassy css (scss) and in doing so i needed a way to have it auto update easier than just stopping the server and restarted. In my research i discovered a gem called guard.&lt;/p&gt;
+
+&lt;p&gt;below are the gems you will need at a minimum&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;jekyll&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;guard&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;guard-jekyll-plus&amp;#39;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;gem&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;guard-livereload&amp;#39;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;install&lt;/span&gt;
+&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;build&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;if you get any errors after building you might be missing a gem, add it to the gemfile and retry the bundle.&lt;/p&gt;
+
+&lt;p&gt;now you will need to run the following command to generate a guard file&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;guard&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;init&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;once that is complete i added the following to the Guardfile&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;guard&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;jekyll-plus&amp;#39;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:serve&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&amp;gt;&lt;/span&gt; &lt;span class=&quot;kp&quot;&gt;true&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;watch&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/.*/&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;ignore&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/^_site/&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;guard&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;&amp;#39;livereload&amp;#39;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;watch&lt;/span&gt; &lt;span class=&quot;sr&quot;&gt;/.*/&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;the final step i used was to add the extension to chrome using the following link.&lt;/p&gt;
+
+&lt;p&gt;http://livereload.com/extensions/&lt;/p&gt;
+
+&lt;p&gt;to run i used the following command&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;bundle&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;exec&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;guard&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;and it began watching the current directory and in another terminal i ran this command:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;n&quot;&gt;jekyll&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;serve&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;--&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;watch&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;seems to be working nicely when i save a document, then tab over and refresh.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 05 Mar 2016 09:45:50 -0600</pubDate>
+        <link>http://jeremybarkley.com/jekyll/2016/03/05/2016-Auto-reload-with-guard/</link>
+        <guid isPermaLink="true">http://jeremybarkley.com/jekyll/2016/03/05/2016-Auto-reload-with-guard/</guid>
+        
+        
+        <category>jekyll</category>
+        
+      </item>
     
       <item>
         <title>LEAP DAY</title>
         <description>&lt;p&gt;so today is leap day… therefore it doesn’t count! you cant learn new things on leap day! YAY!&lt;/p&gt;
 </description>
         <pubDate>Mon, 29 Feb 2016 00:00:00 -0600</pubDate>
-        <link>http://jeremybarkley.com/til/2016/02/29/Leap-day/</link>
-        <guid isPermaLink="true">http://jeremybarkley.com/til/2016/02/29/Leap-day/</guid>
+        <link>http://jeremybarkley.com/til/2016/02/29/2016-Leap-day/</link>
+        <guid isPermaLink="true">http://jeremybarkley.com/til/2016/02/29/2016-Leap-day/</guid>
         
         <category>jekyll</category>
         
@@ -42,10 +96,11 @@ anyways i guess ill get started&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/img/jekyll_post_loop.png&quot; alt=&quot;alt text&quot; title=&quot;jekyll_post_loop&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;obviously the first { % starts the loop and as long as there are more posts it will spit them out. and the endfor bit ends the loop.&lt;/p&gt;
+
 </description>
         <pubDate>Thu, 25 Feb 2016 00:00:00 -0600</pubDate>
-        <link>http://jeremybarkley.com/til/2016/02/25/Jekyll-is-my-friend_maybe/</link>
-        <guid isPermaLink="true">http://jeremybarkley.com/til/2016/02/25/Jekyll-is-my-friend_maybe/</guid>
+        <link>http://jeremybarkley.com/til/2016/02/25/2016-Jekyll-is-my-friend_maybe/</link>
+        <guid isPermaLink="true">http://jeremybarkley.com/til/2016/02/25/2016-Jekyll-is-my-friend_maybe/</guid>
         
         <category>jekyll</category>
         

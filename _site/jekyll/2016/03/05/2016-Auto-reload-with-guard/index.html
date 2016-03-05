@@ -4,20 +4,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Jekyll is my friend... maybe</title>
+    <title>Live reload a page using Guard!</title>
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="/css/main.css">
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
     <meta name="description" content="This is my site...">
-    <link rel="canonical" href="http://jeremybarkley.com/til/2016/02/25/Jekyll-is-my-friend_maybe/">
+    <link rel="canonical" href="http://jeremybarkley.com/jekyll/2016/03/05/2016-Auto-reload-with-guard/">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/css/main.css">
 
 </head>
 
@@ -31,17 +25,7 @@
     <a class="site-title" href="/">jeremybarkley.com</a>
 
     <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-           viewBox="0 0 18 15" enable-background="new 0 0 18 15" xml:space="preserve">
-          <path fill="#505050" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0
-            h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#505050" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484
-            h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#505050" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0
-            c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
+      
       <div class="trigger">
         
           <a class="page-link" href="/about/">About</a>
@@ -65,25 +49,53 @@
       <div class="post">
 
   <header class="post-header">
-    <h1>Jekyll is my friend... maybe</h1>
-    <p class="meta">Feb 25, 2016</p>
+    <h1>Live reload a page using Guard!</h1>
+    <p class="meta">Mar 5, 2016</p>
   </header>
 
   <article class="post-content">
-  <p>So ive decided to try and document my daily learning using markdown, jekyll, and github pages. I say daily but I am mostly refering to week days, however if i get something over the weekend ill call it a bonus… This will be a challenge for me just to put my thoughts on paper (ok not really paper…)
-anyways i guess ill get started</p>
+  <p>So I am working on redoing this sites css using sassy css (scss) and in doing so i needed a way to have it auto update easier than just stopping the server and restarted. In my research i discovered a gem called guard.</p>
 
-<p>Setting up this page alone included quite a bit of learning just getting jekyll setup and looking decent. It took a bit of time but i think im starting to wrap my head around how it works and should be set up. The main thing i wanted to do on it to start with was to have it display the whole post instead of only the title and date like it came with. To do that i first had to figure out where that file was even located. i finally realized its in the root directory in a file called index.html (seems obvious now…)</p>
+<p>below are the gems you will need at a minimum</p>
 
-<p>By default it only shows the post title ( {{post.title}} ) and links to the post ( {{ post.url }} ), but i wanted to have all posts there inline (also added pagination).</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">gem</span> <span class="s1">&#39;jekyll&#39;</span>
+<span class="n">gem</span> <span class="s1">&#39;guard&#39;</span>
+<span class="n">gem</span> <span class="s1">&#39;guard-jekyll-plus&#39;</span>
+<span class="n">gem</span> <span class="s1">&#39;guard-livereload&#39;</span></code></pre></div>
 
-<p>maybe monday i can learn how to post the snippet of code to detail this…</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="err">$</span> <span class="n">bundle</span> <span class="n">install</span>
+<span class="err">$</span> <span class="n">jekyll</span> <span class="n">build</span></code></pre></div>
 
-<p>… no luck on that snippet but i made a screenshot.</p>
+<p>if you get any errors after building you might be missing a gem, add it to the gemfile and retry the bundle.</p>
 
-<p><img src="/img/jekyll_post_loop.png" alt="alt text" title="jekyll_post_loop" /></p>
+<p>now you will need to run the following command to generate a guard file</p>
 
-<p>obviously the first { % starts the loop and as long as there are more posts it will spit them out. and the endfor bit ends the loop.</p>
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">bundle</span> <span class="nb">exec</span> <span class="n">guard</span> <span class="n">init</span></code></pre></div>
+
+<p>once that is complete i added the following to the Guardfile</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">guard</span> <span class="s1">&#39;jekyll-plus&#39;</span><span class="p">,</span> <span class="ss">:serve</span> <span class="o">=&gt;</span> <span class="kp">true</span> <span class="k">do</span>
+  <span class="n">watch</span> <span class="sr">/.*/</span>
+  <span class="n">ignore</span> <span class="sr">/^_site/</span>
+<span class="k">end</span>
+
+<span class="n">guard</span> <span class="s1">&#39;livereload&#39;</span> <span class="k">do</span>
+  <span class="n">watch</span> <span class="sr">/.*/</span>
+<span class="k">end</span></code></pre></div>
+
+<p>the final step i used was to add the extension to chrome using the following link.</p>
+
+<p>http://livereload.com/extensions/</p>
+
+<p>to run i used the following command</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">bundle</span> <span class="nb">exec</span> <span class="n">guard</span></code></pre></div>
+
+<p>and it began watching the current directory and in another terminal i ran this command:</p>
+
+<div class="highlight"><pre><code class="language-ruby" data-lang="ruby"><span class="n">jekyll</span> <span class="n">serve</span> <span class="o">--</span><span class="n">watch</span></code></pre></div>
+
+<p>seems to be working nicely when i save a document, then tab over and refresh.</p>
 
   </article>
 
