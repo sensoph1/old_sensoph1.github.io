@@ -1,0 +1,16 @@
+.site-header {
+  border-radius: 10px;
+  margin: 15px 0 0 0; }
+  .site-header .header-wrap {
+    display: flex;
+    margin: 10px 20%;
+    background: lightgrey;
+    border-radius: 10px; }
+    .site-header .header-wrap a {
+      color: black; }
+    .site-header .header-wrap .site-title {
+      width: 85%;
+      margin: 10px 10px; }
+    .site-header .header-wrap .site-nav {
+      float: right;
+      margin: 10px 0; }

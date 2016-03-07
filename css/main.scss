@@ -1,5 +1,30 @@
+---
+#front matter comment to ensure jekyll reads file.
+---
 
 
-.header-wrap{
-	background:red;
+.site-header{
+	border-radius: 10px;	
+	margin:15px 0 0 0 ;
+
+	.header-wrap{
+		display:flex;
+		margin:10px 20%;
+		background:lightgrey;
+		border-radius:10px;
+		a{
+			color:black;
+		}
+		.site-title{
+			
+			width:85%;
+			margin:10px 10px;
+		}
+		.site-nav{
+			float:right;
+						margin:10px 0;
+
+		}
+
+	}
 }
